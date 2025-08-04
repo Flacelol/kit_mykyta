@@ -1,26 +1,381 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kit_mykyta</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        .text {
-            font-size: 3rem;
-        }
-    </style>
+    <title>Кіт Микита - Кав'ярня в Миколаєві</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="text">kit_mykyta</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Кіт Микита</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Про нас</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Контакти</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Кіт Микита</h1>
+                <p class="hero-subtitle">Кав'ярня з душею та серцем України</p>
+                <p class="hero-description">Тепле місце в серці Миколаєва, де кожна чашка кави розказує історію любові, пам'яті та незламності українського духу.</p>
+                <a href="#about" class="cta-button">Дізнатися більше</a>
+            </div>
+            <div class="hero-image">
+                <div class="coffee-illustration">
+                    <svg viewBox="0 0 200 200" class="coffee-cup">
+                        <circle cx="100" cy="100" r="80" fill="#1a1a1a" stroke="#ffd700" stroke-width="3"/>
+                        <circle cx="100" cy="90" r="60" fill="#8B4513"/>
+                        <circle cx="100" cy="85" r="45" fill="#D2691E"/>
+                        <ellipse cx="100" cy="80" rx="35" ry="8" fill="#F5DEB3" opacity="0.8"/>
+                        <path d="M160 90 Q180 90 180 110 Q180 130 160 130" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="hero-flag">
+            <div class="flag-blue"></div>
+            <div class="flag-yellow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наша історія</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="story-card">
+                        <h3>Пам'ять, що живе в кожній чашці</h3>
+                        <p>"Наш заклад - спільна мрія з чоловіком, яку ми «виношували» 2 роки. Захищаючи нас, він загинув, то ж я вирішила втілити мрію за двох.
+Кав'ярня має дуже символічну назву. Микита - позивний мого чоловіка. А кіт, тому що гарно бачить в темряві, справний, швидкий на роботі, та ніжний вдома зі мною.
+Вибір меню теж не просто так. Гонконсьзські вафлі з червоною рибою та авокадо - улюблений сніданок Дмитра. А без смачної, запашної кави не проходив його ранок. То ж тут пригощаємо з душею" – власниця закладу Марина Музика</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="memorial-illustration">
+                        <svg viewBox="0 0 300 300" class="memorial-svg">
+                            <rect x="50" y="200" width="200" height="80" fill="#1a1a1a" rx="10"/>
+                            <rect x="60" y="210" width="180" height="60" fill="#0057b7" rx="5"/>
+                            <rect x="60" y="240" width="180" height="30" fill="#ffd700" rx="5"/>
+                            <circle cx="150" cy="150" r="40" fill="#1a1a1a" stroke="#ffd700" stroke-width="3"/>
+                            <path d="M130 140 L150 160 L170 130" stroke="#ffd700" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <text x="150" y="295" text-anchor="middle" fill="#ffd700" font-size="12" font-family="serif">Пам'ять живе вічно</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="memory-images">
+                <img src="images/mykyta1.jpg" alt="Спогади про Миколу" class="memory-photo mykyta1-photo">
+                <img src="images/mykyta2.jpg" alt="Кав'ярня Кіт Микита" class="memory-photo mykyta2-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наше меню</h2>
+                <div class="section-line"></div>
+                <p>Кожна страва приготована з любов'ю та найкращими інгредієнтами</p>
+            </div>
+            <div class="menu-categories">
+                <div class="menu-category">
+                    <h3>Гарячі напої</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Еспресо</h4>
+                            </div>
+                            <span class="price">30/35 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Американо</h4>
+                            </div>
+                            <span class="price">35 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Американо з молоком</h4>
+                                <p>(безлактонзе, бананове, кокосове)</p>
+                            </div>
+                            <span class="price">40 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Латте</h4>
+                            </div>
+                            <span class="price">45/65 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Капучино</h4>
+                            </div>
+                            <span class="price">50/60 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Допіо</h4>
+                            </div>
+                            <span class="price">50 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Какао</h4>
+                            </div>
+                            <span class="price">50/60 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Гарячий шоколад</h4>
+                            </div>
+                            <span class="price">55/65 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Чай</h4>
+                            </div>
+                            <span class="price">40/50 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Раф</h4>
+                            </div>
+                            <span class="price">50/60 грн</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>Холодні напої</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Мохіто</h4>
+                            </div>
+                            <span class="price">65 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Авторський лимонад</h4>
+                            </div>
+                            <span class="price">75 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Блакитна лагуна</h4>
+                            </div>
+                            <span class="price">70 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Айс латте</h4>
+                            </div>
+                            <span class="price">70 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Еспресо-тонік</h4>
+                            </div>
+                            <span class="price">70 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Молочний коктейль</h4>
+                            </div>
+                            <span class="price">70 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Джміль</h4>
+                            </div>
+                            <span class="price">75 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Мілк-шейк</h4>
+                            </div>
+                            <span class="price">70 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Bubble Tea</h4>
+                            </div>
+                            <span class="price">50 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Фрапе</h4>
+                            </div>
+                            <span class="price">50 грн</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>Перекус</h3>
+                    <div class="menu-items">
+                       <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Хот-дог</h4>
+                                <p>з молочною сосикою</p>
+                            </div>
+                            <span class="price">70 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Хот-дог</h4>
+                                <p>з мисливською  сосикою</p>
+                            </div>
+                            <span class="price">80 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Хот-дог</h4>
+                                <p>з сирною сосикою</p>
+                            </div>
+                            <span class="price">75 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Бургер</h4>
+                                <p>з курятиною</p>
+                            </div>
+                            <span class="price">85 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Бургер</h4>
+                                <p>з телятиною</p>
+                            </div>
+                            <span class="price">95 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Вафлі</h4>
+                                <p>з курятиною</p>
+                            </div>
+                            <span class="price">150 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Вафлі</h4>
+                                <p>з ковбасками</p>
+                            </div>
+                            <span class="price">140 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Вафлі</h4>
+                                <p>з лососем</p>
+                            </div>
+                            <span class="price">170 грн</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Вафлі</h4>
+                                <p>з тропічними фруктами</p>
+                            </div>
+                            <span class="price">135 грн</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Солодощі</h3>
+                    <div class="menu-items">
+                       <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Морозиво</h4>
+                            </div>
+                            <span class="price">75 грн</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Контакти</h2>
+                <div class="section-line"></div>
+                <p>Завітайте до нас і відчуйте тепло українського гостинності</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Адреса</h3>
+                        <p>Проспект Центральний 75а<br>Миколаїв, Україна</p>
+                        <a href="https://maps.app.goo.gl/TXZbmaY4y58pngcR7" target="_blank" class="maps-link">📍 Відкрити в Google Maps</a>
+                    </div>
+                    <div class="info-card">
+                        <h3>Години роботи</h3>
+                        <p>Понеділок - П'ятниця: 7:00 - 22:00<br>
+                           Субота - Неділя: 8:00 - 23:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Кіт Микита</h3>
+                    <p>Кав'ярня з душею України</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Адреса</h4>
+                    <p>Проспект Центральний 75а, Миколаїв</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Слідкуйте за нами</h4>
+                    <a href="https://www.instagram.com/kit_mykyta?igsh=MWxxdnBraDRmdjdubw==" target="_blank" class="instagram-link">📷 Instagram</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Слава Україні!</h4>
+                    <p>Героям слава!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Кіт Микита. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
