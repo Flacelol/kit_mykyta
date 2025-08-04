@@ -12,6 +12,18 @@ body {
     background-color: #fafafa;
 }
 
+/* Quote paragraph styling */
+p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem auto;
+    font-style: italic;
+    color: #1a1a1a;
+    font-weight: 500;
+    max-width: 800px;
+    padding: 1rem;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
